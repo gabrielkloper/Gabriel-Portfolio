@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+
+html{
+    background-image: url(./background-st2.jpg);
+    background-size: auto;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif ;
+    scroll-behavior: smooth;
+}
+
+ul{
+    color: #000000;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: inherit;
+    margin-top: 0px;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: center;
+    
+    
+
+
+}
+
+li {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-block;
+    position: sticky;
+    align-items: normal;
+    background: rgb(255, 0, 0);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px 50px;
+    border-radius: 4px;
+    font-style: oblique;
+    font-size: 2rem;
+    text-transform: uppercase;
+    z-index: 10;
+    height: 20px;
+    justify-content: space-between;
+}
+
+a{
+    color: #000000;
+    font-style: none;
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    height: inherit;
+    margin: 0;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-left: 100px;
+    align-items: center;
+    flex-direction: row;
+    
+    
+  
+
+}
+    
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+    overflow: auto;
+}
+
+    
+.container{
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.section-title {
+    background-color: #ff0000;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+   
+    
+}
+
+.section-title {   
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(255, 0, 0);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+
+  a :hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    width: auto;
+    display: flex;
+    float: none;
+    flex-direction: row;
+    flex: 1;
+
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+    background-color: #ff0000;
+    height: 50px;
+
+  }
+
+
+  footer {
+      display: flex;
+      font-size: 10px;
+      background-image: linear-gradient(60deg, #ff0000 0%, #1b2530 100%);
+      
+  }
+
+  footer .contato {
+    font-style: oblique;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: top;
+  }
+
+  .contato {
+    flex-direction: column;
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 0px !important;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+  
+/* Seção de apresentação */
+
+#presentation{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    
+
+}
+#presentation h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+    margin: auto;
+    margin-bottom: 50px;
+    
+}
+#presentation h1:nth-child(1){
+    animation-delay: .8s;
+}
+
+#presentation h1:nth-child(2){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2.8s;
+    font-size: 20rem;
+    position: relative;
+    color: transparent;
+    margin:auto;
+}
+
+ .cta:hover{
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+#presentation h1 span{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: #ff0000;
+}
+#presentation h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(2) span{
+    animation-delay: 2.5s;
+}
+#presentation::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    background-color:transparent;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Seção de Portifólio */
+
+#portfolio .portfolio{
+    max-height: fit-content;
+    flex-direction: column;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#portfolio .portfolio-header h1{
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: none;
+}
+
+div.portfolio-header{
+    display: none !important;
+}
+#portfolio .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+#portfolio .project-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#portfolio .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #ff0000 0%, #1b2530 100%);
+    color: white;
+    text-align: justify;
+}
+
+#portfolio .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 0px;
+}
+
+#portfolio .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: black;
+    
+}
+
+#portfolio .project-img {
+    flex-basis: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    position: relative;
+    object-fit: contain;
+    display: flexbox;
+    
+}
+
+#portfolio .project-img:after {
+    display: none;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #000000 0%, #485563 100%);
+    opacity: 0.2;
+}
+#portfolio .project-img img{
+    transition: 0.5s ease transform;
+}
+#portfolio .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
+
+/* Keyframes */
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: #ff0000;
+        font-weight: 100px;
+    }
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left:100%
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 1000px) {
+    #portfolio .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #portfolio .all-projects .project-info{
+        height: 100%;
+    }
+    #portfolio .all-projects .project-img{
+        height: 100%;
+    }
+    #portfolio .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    }
+
+    #presentation h1{
+        display: flex;
+        width: fit-content;
+        font-size: auto;
+        position: relative;
+        color: transparent;
+        animation: text_reveal .5s ease forwards;
+        animation-delay: 1.5s;
+        margin: auto;
+        margin-bottom: 50px;
+    
+}
+
+@media only screen and (max-width: 999px) {
+    #portfolio .project-img img{
+        visibility: hidden;
+    }
+
+   
+    
+}
+
+@media only screen and (max-width: 1180px) {
+    nav, ul, .navegador li {
+        visibility: hidden;
+        background-color: none;
+
+    }
+    h1 #stranger {
+        font-size: 20px;
+        
+    }
+}
