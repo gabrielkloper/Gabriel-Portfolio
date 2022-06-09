@@ -1,4 +1,4 @@
 # Gabriel-Portfolio
-Todos os Projetos que fiz durante o meu período de estudo
+All the projects I am currently working on
 
-Inicialmente apenas o primeiro projeto
+My first page with CSS and HTML5
