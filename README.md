@@ -1,6 +1,2 @@
 # Gabriel-Portfolio
-All the projects I am currently working on
-
-My first page with CSS and HTML5
-
-conflitos com o git
+My first landing page with CSS and HTML5 about all Stranger Things seasons.
